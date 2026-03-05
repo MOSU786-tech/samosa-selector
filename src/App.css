@@ -1,0 +1,79 @@
+/* Main container for the app */
+.App {
+  min-height: 500vh; 
+}
+
+/* ==================== STEP 1 ==================== */
+/* Style for the large samosa image */
+.samosa {
+  /* Set the height of the samosa image */
+  height: 15em;
+  /* Add padding around the samosa */
+  padding: 1.5em;
+  /* Center the samosa horizontally with auto margins */
+  margin: 0 auto;
+  /* Center the text inside the container */
+  text-align: center;
+}
+
+/* ==================== STEP 6 (Stretch Feature) ==================== */
+/* Style for samosa when user hovers over it */
+.samosa:hover {
+  /* Show pointer cursor when hovering */
+  cursor: pointer;
+  /* Scale up the samosa to 110% (1.1x) size for growing effect */
+  transform: scale(1.1);
+}
+
+/* Style for samosa when user actively clicks on it */
+.samosa:active {
+  /* Scale down to 95% (0.95x) size to create pulse/shrink effect */
+  transform: scale(0.95);
+}
+
+/* ==================== STEP 3 ==================== */
+/* Container for the upgrade cards - displays them in a row */
+.container {
+  /* Add space above the container */
+  margin-top: 50px;
+  /* Use flexbox to display items in a row */
+  display: flex;
+}
+
+/* Style for each individual upgrade card */
+.upgrade {
+  /* Add a subtle border around each card */
+  border: 1px solid rgba(153, 153, 153, 0.497);
+  /* Add padding inside the card (20px top/bottom, 10px left/right) */
+  padding: 20px 10px;
+  /* Add space to the right of each card */
+  margin-right: 25px;
+  /* Set a fixed width for each card */
+  width: 200px;
+  /* Reduce line height for a more compact look */
+  line-height: 0.5;
+}
+
+/* Style for all buttons */
+button {
+  /* Round the corners of the button */
+  border-radius: 8px;
+  /* Transparent border to maintain consistent spacing */
+  border: 1px solid transparent;
+  /* Add padding inside the button (0.3em top/bottom, 1em left/right) */
+  padding: 0.3em 1em;
+  /* Set the font size to match the base font size */
+  font-size: 1em;
+  /* Make the text bold */
+  font-weight: 500;
+  /* Inherit the font family from parent */
+  font-family: inherit;
+  /* Dark background color */
+  background-color: #1a1a1a;
+  /* Light text color with transparency */
+  color: rgba(255, 255, 255, 0.87);
+  /* Show pointer cursor when hovering over button */
+  cursor: pointer;
+  /* Add space above the button */
+  margin-top: 10px;
+}
